@@ -1,0 +1,27 @@
+User cannot access the shared drive to their department from their remote workstation:
+
+Issue Description:
+I can't get to my files on the Marketing shared drive today. I keep getting "The network path was not found" when I try to open it. 
+I'm working from home today. My internet and email both work fine.
+
+Troubleshooting performed by user:
+- Restarted my computer (no change)
+- Internet and email work normally
+- The mapped drives say disconnected
+
+The first thing to research is whether the user is connected to the VPN.
+By remote accessing their device, we can see their VPN client and if it's on Disconnected/offline, we will press the button to connect.
+
+We will then check with the user if they can connect after this.
+If not, proceed to the next step.
+
+We will open the tools for documentation and file server where we will find the Marketing UNC(Universal Naming Convention) path:
+\\FILESERV01\departments\Marketing - Marketing department files
+
+With this information, we will not re-visit the users PC remote and open the file explorer -> This PC -> ... -> Map network drive
+
+A box will show up with the Drive letter, in our case: D:
+And a box to write in a folder directory.
+This is where the \\FILESERV01\departments\Marketing will be written in. And then I click finish.
+
+This more often will solve the problem, and in this case, the ticket got solved!
