@@ -1,0 +1,16 @@
+Submitted by higher up, requesting access modification - Department transfer
+
+User has provided employee details like:
+- Name
+- Username
+- Current department
+- Transfer to
+- Effective date
+
+This employee needs their access updated which we can do in the user directory.
+We find their user and enter th Groups tab. Here we find out that their group membership is still on
+Engineering and needs to be changed.
+
+We add them to the updated department: IT infrastructure from Engineering and remove the latter.
+
+This solved the ticket.
