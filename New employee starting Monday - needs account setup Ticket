@@ -1,0 +1,20 @@
+User has submittet a ticket about a new employee account creation in the directory.
+The user has provided information that I will add to the account:
+
+Employee Details:
+- Name: Jennifer Torres
+- Username: jtorres
+- Email: jtorres@servicedesk-simulator.com
+- Start Date: 2026-02-10
+- Department: Engineering
+- Manager: Tom Wilson
+- Position: Junior Developer
+
+With this information, I enter the directory and click the "create a new user" button.
+
+We Add the given information into the fields and then visit the Groups tab to assign them to these groups:
+- Engineering group
+- VPN-User group
+- CodeRepo-Access group
+
+And this should have solved the ticket!
