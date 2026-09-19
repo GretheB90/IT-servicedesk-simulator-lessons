@@ -1,0 +1,15 @@
+User has sent a report about their VPN disconnecting and won't reconnect.
+
+We do first a remote desktop to check the users VPN settings.
+Trying to click connect gives this error message:
+
+VPN connection failed - Stale DNS entries are blocking the tunnel.
+Open the terminal and run "ipconfig/flushdns" to clear the DNS cache first.
+
+After running the command, restart the PC to apply the changes.
+
+We need to ask the user for the password to their device and log back in to see whether the problem still persist.
+
+After logging in and giving the connect VPN button another attempt, it connects and is working again.
+
+Ticket closed.
