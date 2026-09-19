@@ -1,0 +1,24 @@
+User sent in a report regarding their second monitor not turning on and giving a "No Signal" message when they turn on their devices.
+It was working the day before. Power goes to the monitor, it just won't show any visuals nor gets detected.
+
+The user has done some troubleshooting on their own and given the following report:
+- Checked all the cables are plugged in
+- Swapped in a different cable and tried the other video port on my PC - still "No Signal"
+- Restarted the computer
+- Borrowed a coworker's laptop to test the monitor - works on theirs
+
+This means that we need to remote Desktop into their device and continue the investigation.
+
+When on their desktop, I can see artifacts on graphical glitches happening.
+I right click on the desktop and I find the Display adapter showing an error/warning:
+
+Basic Display Adapter.
+This adapter may not support multiple displays.
+
+We will head into the System Update app next and check for updates.
+
+We see there's different drivers that needs an update, so we go through the list.
+Some of them needing a restart after update, but this solved the problem and the user can see their monitor working again
+and proceed their tasks.
+
+Ticket solved.
