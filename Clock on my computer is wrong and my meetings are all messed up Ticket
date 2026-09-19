@@ -1,0 +1,14 @@
+user is reporting about their device clock not showing correct time.
+They're in Central time, but clock shows Eastern.
+This problem affects their company meeting times.
+
+The user has followed these troubleshootings before sending me the message:
+- I noticed it's set to Eastern but I'm in Central
+- Restarted my computer - no change
+
+I have to remote desktop into the users PC to continue the investigation.
+
+I visit the Date & time section in Settings and change the time from Eastern to Central time
+and allow it to sync the clock.
+
+This solved the problem and ticket is closed.
