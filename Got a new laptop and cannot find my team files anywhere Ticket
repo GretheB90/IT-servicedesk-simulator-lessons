@@ -1,0 +1,18 @@
+User senting a ticket regarding them getting a new Laptop and almost everything working.
+They cannot find their department shared drive.
+
+The user has done some troubleshooting on their own before sending this ticket:
+- Everything else works on the new laptop
+- My old laptop had the drive
+
+They're remote working from home.
+
+We log into their device through remote desktop.
+We see that their VPN is not connected, Status down. We turn it on.
+
+They need the engineering department drive we figure out by chatting directly with the user.
+
+We find in our documentation the UNC for \\FILESERV01\departments\Engineering and insert it through the File Explorer by clicking
+the ... at the top and inserting the UNC into the field.
+
+This solved the problem. Ticket closed
