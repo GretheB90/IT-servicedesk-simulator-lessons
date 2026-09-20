@@ -1,0 +1,14 @@
+User is reporting that they receive emails fine, but when they try to open any
+attachments, nothing happens.
+
+The user has conducted some troubleshooting before sending us the ticket:
+- Clicked the attachments a bunch
+- Closed and reopened Mail
+
+They're working remote from their home
+
+We have to remote connect into this users Device to have a closer look.
+After logging in, we go to their Control Panel and find their Mail Client.
+We click on the Repair button to see if this might fix the problem.
+
+It did indeed fix it and ticket is closed.
