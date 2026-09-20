@@ -1,0 +1,21 @@
+User sent in a message about them not being able to find Department files.
+
+They mention that the drive letter they've previously used is gone from their computer.
+Worked last week.
+
+The user has gone through some troubleshooting and reporting the following:
+- Drive letter not in This PC
+- Was working last week
+- Restarted my computer - still gone
+- Internet seems fine
+
+I remote into their Computer and take a look at their File explorer -> This PC and see that the
+D: Engineering Department Drive is offline.
+
+I go into the Documentation to find the information about the different servers and I locate the File server tab.
+Here I find the standard shares of the different servers and copy paste the \\FILESERV01\departments\Engineering
+
+I go back to the users Computer on remote, I click the ... and choose to Map Network Drive and copy paste the direction
+I found in the documentation.
+
+This fixed the problem! Ticket solved.
