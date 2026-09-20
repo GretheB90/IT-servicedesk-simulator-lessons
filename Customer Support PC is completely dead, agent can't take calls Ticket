@@ -1,0 +1,92 @@
+User is reporting that their Computer is completely dead.
+
+The user has conducted some troubleshooting:
+- Pressed the power button several times
+- Checked the wall outlet with another device (it works)
+- Completely dead, no lights, no fan, no beep
+
+Confirmed this as well by trying to remote in. No connection.
+
+This could be a physical problem.
+So this means we need to directly communicate with the user on site.
+
+We ask the user to confirm it's truly dead.
+Having them try a different outlet that's confirmed to work and a different power cable.
+If no ligts or fan starts might indicate it needs to be replaced.
+
+We get confirmation that none of the asked for methods yields any positive effect.
+Thus device needs to be replaced.
+
+We need the information from the user whether the Device is a Laptop or a Desktop as the replacement needs to match.
+User confirmed Desktop.
+
+I visit the Computer Deployment to build the replacement with "server imaging" (Customer Support agents need the imaged build, not Cloud Provisioning,
+I will have to look into he Documentation -> Hardware & Assets -> "Choosing a PC Setup").
+
+This demands I set up a replacement Device for the user and progressing through the set-up, making sure to follow the instructions
+made by the deployment department.
+
+We have to put the cables in the correct inputs.
+then we press f12 to enter the install mode.
+We choose in this scenario the PXE Network Boot IPv4(Onboard Gigabit Ethernet Controller) for the boot option.
+We type in a password to progress and then have to edit the value to the name of the Device.
+
+We give it the Value of:
+SD2027
+
+We then get to the log-in screen and by logging in, it should complete the set-up and it can be put on the shelf 
+and ready to ship to the user as fast as possible.
+Recommended to allow a return label in case they need to ship anything back to the IT department.
+
+The new device is all working and ticket is closed.
+
+
+
+
+
+
+Additional information for myself and this lesson from the PDF provided by the simulator:
+
+
+Deployment accounts and passwords
+------------------------------------------------------------------------
+Deployment account (authenticate to the deployment share in the wizard):
+The account is preconfigured, so no user name is entered. Only the password is
+required.
+Password: Deploy#2026
+Scope: read access to the OSD task sequence and package share only.
+This is the only password entered during imaging.
+Sign-in after imaging (domain credentials):
+Sign in once to confirm the build using your own domain account:
+your display name as the user name, and the shared domain password
+Servicedesk2026!
+
+Computer naming convention
+------------------------------------------------------------------------
+Every machine name follows the SD asset convention: SD followed by four digits.
+SD#### All workstations, desktop or laptop (examples SD1042, SD1108, SD1205)
+This same SD#### value is the machine name AND its asset tag in inventory: one
+identifier per device, so the asset register and the hostname always agree.
+Rules:
+Use the next free SD number. Check the asset register before assigning.
+Names are uppercase, no spaces. Do not reuse a name already in the register.
+Set the name in the wizard field OSDComputerName before the task sequence runs.
+
+Procedure
+------------------------------------------------------------------------
+1. Stage the hardware. Connect power, wired network, display, keyboard, and mouse.
+The workstation powers on when mains power is connected.
+2. Catch the boot menu. As the device powers on, tap F12 repeatedly until the
+firmware boot menu appears.
+3. Select the network boot. Choose PXE Network Boot IPv4. This site’s PXE serves
+IPv4 only, so do not select the IPv6 entry; it will time out.
+4. Authenticate. When the Deployment Wizard loads, enter the deployment password
+(Deploy#2026). No user name is required.
+5. Name the machine. On the Task Sequence Wizard, press Edit and set OSDComputerName
+to the assigned name from Section 5. Confirm the value, then OK and Next.
+6. Run the task sequence. Start the Imaging Server task sequence. It partitions the
+disk, applies the image, installs applications, and joins the domain without further
+input. Do not power off during this stage.
+7. Reboot. The machine restarts automatically when imaging completes.
+8. Verify sign-in. At the logon screen, sign in with your domain credentials
+(Section 4) to confirm the build.
