@@ -1,0 +1,10 @@
+User has contacted the Servicedesk due to no internet on floor 3.
+Started half an hour ago. No websites can be accessed. Other floors are functioning.
+
+I check the status in the Server Room directory and find the Device status of Floor 3 to be marked with "Error".
+
+Tried to reboot the server and now it's marked Online.
+Waited about 30-60 seconds before contacting the user to confirm the internets status on floor 3.
+Got response back that it was all up and running again.
+
+Ticket solved.
