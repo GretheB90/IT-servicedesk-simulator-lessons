@@ -1,0 +1,21 @@
+User has sent in a ticket about the buttons on their headset not functioning.
+
+Volume and mute buttons doesn't work.
+They worked on a previous computer.
+
+Troubleshooting by the user:
+
+- Sound through the headset works fine
+- The wheel and mute button just don't respond
+- Using the Workstation OS volume slider for now
+
+We will remote into the users Desktop and checking on their system updates to see
+if perhaps there might be a driver not updated.
+I see the Onboard Audio driver was in need of an update among other drivers.
+So we check this one in case.
+
+I also have gotten the model name and brand from the user. In this case, it's a Voxatel VX-310W.
+So we can go in their browser to download the latest driver for their specific model and install.
+After a restart. its functioning as it should.
+
+Ticket closed
